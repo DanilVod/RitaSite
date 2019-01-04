@@ -1,0 +1,12 @@
+@media (max-width: 570px) {
+.menu {
+    width: 30%;
+     ul {
+         display: inline-flex;
+         flex-direction: column;
+         float: right;
+
+     }
+}
+
+}
