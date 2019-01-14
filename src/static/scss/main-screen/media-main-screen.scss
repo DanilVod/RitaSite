@@ -1,5 +1,8 @@
 @media (max-width: 570px) {
-.menu {
+.main-screen {
+    justify-content: space-around;
+}
+.header__menu {
     ul{
         position: fixed;
         display: block;
@@ -10,13 +13,17 @@
         background-color: rgba(0,0,0,0.8);
         z-index: 100;
         overflow: auto;
-        opacity: 1;
+        opacity: 0;
     }
+}
     .menu-open {
+        display: block;
         ul {
             opacity: 1;
         }
-        .menu-mobile {
+         
+        .menu__icon {
+            display:flex ;
         span {
             &:nth-child(1) {
                 top: 18px;
@@ -36,14 +43,22 @@
             }
             }
         }
-    }   
-}
-.menu-mobile {
+      }
+
+.menu__icon {
     display: inline-block;
 }
 .menu-link{
     display: block;
     padding: 10px 0;
     text-align: center;
-}
+    }
+.main-screen__title{
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    }
 }

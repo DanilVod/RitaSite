@@ -1,11 +1,7 @@
-$(document).ready(function() {
-    $('.slider').slick()
-});
-
-$(document).ready(function ($) {
+$(document).ready(function ($){
     $(function() {
-        $('.menu-mobile').on('click', function() {
-            $(this).closet('.menu').toggleClass('menu-open');
+        $('.menu__icon').on('click', function () {
+            $(this).closest('.header__menu').toggleClass('menu-open');
         });
     });
-})(jQuery);
+});
