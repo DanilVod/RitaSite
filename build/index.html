@@ -4,32 +4,35 @@
     <title>Hello World</title><meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/css/main.css"/>
     <link rel="stylesheet" href="static/css/normalize.css"/>
-    <body>
-      <div class="main-screen">
-        <div class="header">
-          <div class="header__logo"><img src="static/img/Logo.svg" alt=""/></div>
-          <div class="header__menu">
-            <div class="menu__icon"><span></span><span></span><span></span><span></span></div>
-            <ul class="menu__list">
-              <li><a class="menu-link" href="#">Services </a></li>
-              <li><a class="menu-link" href="#">Portofolio</a></li>
-              <li><a class="menu-link" href="#">Testimonials</a></li>
-              <li><a class="menu-link" href="#">About</a></li>
-              <li><a class="menu-link" href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="main-screen__title">
-          <h1> Velox One Page Template</h1>
-          <h3> Clean, Responsive, customizable one page template </h3>
-        </div>
-        <div class="main-screen__button">
-          <button>Get Started Now </button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js">  </script>
+  </head>
+  <body>
+    <div class="main-screen">
+      <div class="header">
+        <div class="header__logo"><img src="static/img/Logo.svg" alt=""/></div>
+        <div class="header__menu">
+          <div class="menu__icon"><span></span><span></span><span></span><span></span></div>
+          <ul class="menu__list">
+            <li><a class="menu-link" href="#">Services </a></li>
+            <li><a class="menu-link" href="#">Portofolio</a></li>
+            <li><a class="menu-link" href="#">Testimonials</a></li>
+            <li><a class="menu-link" href="#">About</a></li>
+            <li><a class="menu-link" href="#">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </body>
+      <div class="main-screen__title">
+        <h1> Velox One Page Template</h1>
+        <h3> Clean, Responsive, customizable one page template </h3>
+      </div>
+      <div class="main-screen__button">
+        <button>Get Started Now </button>
+      </div>
+    </div>
     <div class="services-screen">
-      <div class="services-screen__title">
+      <div class="screen__title">
         <h1>Our Services</h1>
       </div>
       <div class="services-screen__list-services">
@@ -79,8 +82,93 @@
         </div>
       </div>
     </div>
-    <script src="static/js/libs.min.js"></script>
-    <script src="static/js/main.js">  </script>
-  </head>
-  <body></body>
+    <div class="portfolio-screen">
+      <div class="screen__title">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="tabs portfolio__tabs">
+        <div class="tabs__block">
+          <div class="tabs__item"><span class="tab isActive">all </span><span class="tab">illustrations </span><span class="tab">logo </span><span class="tab">branding </span><span class="tab">web design </span></div>
+          <div class="tabs__content"> 
+            <div class="tabs__content__item category__all">
+              <div class="tabs__content__container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_1.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p>Agency - PSD Template</p>
+                </div>
+              </div>
+              <div class="tabs__content__container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_2.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p>Pure Vodka Branding</p>
+                </div>
+              </div>
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_3.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p>Web Design</p>
+                </div>
+              </div>
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_4.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p>Everest Logo</p>
+                </div>
+              </div>
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_5.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p>Poster Design</p>
+                </div>
+              </div>
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_6.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p>illustration</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content__item category__illustrations">
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_6.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p>illustration</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content__item category__logo">
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_4.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content__item category__branding">
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_2.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content__item category__web-design">
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_1.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p></p>
+                </div>
+              </div>
+              <div class="tabs__content_container">
+                <div class="tabs__content__item__img"><img src="static/img/tabs_image_3.png" alt="" srcset=""/></div>
+                <div class="tabs__content__item__title">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
