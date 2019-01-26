@@ -15,7 +15,8 @@ $icon-background: #f5f6f8;
     .service-item__logo-design {
         text-align: center;
         .service-item__image {
-            background: url(../img/pencil-edit-button.svg)no-repeat center;
+            background-image: url(../img/pencil-edit-button.svg);
+            background-repeat: no-repeat;
             background-color: $icon-background;
             background-size: 35px 35px;
             border-radius: 50%;
@@ -28,7 +29,8 @@ $icon-background: #f5f6f8;
     .service-item__web-design {
         text-align: center;
         .service-item__image {
-            background: url(../img/icon-plan.svg)no-repeat center;
+            background-image: url(../img/icon-plan.svg);
+            background-repeat: no-repeat;
             background-color: $icon-background;
             background-size: 35px 35px;
             border-radius: 50%;
@@ -40,8 +42,9 @@ $icon-background: #f5f6f8;
     }
     .service-item__branding {
         text-align: center;
-        .service-item__imaga {
-            background: url(../img/light-bulb.svg)no-repeat center;
+        .service-item__image {
+            background-image: url(../img/light-bulb.svg);
+            background-repeat: no-repeat;
             background-color: $icon-background;
             background-size: 35px 35px;
             border-radius: 50%;
@@ -54,7 +57,8 @@ $icon-background: #f5f6f8;
     .service-item__illustrations {
         text-align: center;
         .service-item__image {
-            background: url(../img/icon-illusrations.svg)no-repeat center;
+            background-image: url(../img/icon-illusrations.svg);
+            background-repeat: no-repeat;
             background-color: $icon-background;
             background-size: 35px 35px;
             border-radius: 50%;

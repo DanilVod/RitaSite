@@ -1,3 +1,15 @@
-.tab.isActive{
+.tab.isActive {
   border-bottom: 1px solid red;
+}
+
+.tabs__item {
+  margin-bottom: 10px;
+}
+
+.portfolio-item {
+  display: block;
+}
+
+.portfolio-item.hidden {
+  display: none;
 }

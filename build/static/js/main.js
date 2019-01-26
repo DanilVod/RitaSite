@@ -1,35 +1,26 @@
-$(document).ready(function ($){
-    $(function() {
-        $('.menu__icon').on('click', function () {
-            $(this).closest('.header__menu').toggleClass('menu-open');
-        });
-    });
-});
+const ALL_TABS_ID = "all";
 
-$(" .tabs__content__item").not(":first").hide();
+function menuOnClick() {
+  $(this)
+    .closest(".header__menu")
+    .toggleClass("menu-open");
+};
 
-var tabIndex = 0, //индекс текущего таба
-    countTabs = $(".tabs__content__item").length - 1, //количество табов
-    time = 5000; // время перелистывания, установленно 1сек
+function tabsOnClick() {
+  const tabId = $(this).data("tab");
+  const content = $(`.portfolio-item[data-tab=${tabId}]`);
 
-$(".tabs.portfolio__tabs .tabs__block .tab").click(function () {
-  tabIndex = $(this).index();
-  checkTab();
-});
+  $(".tab").removeClass("isActive");
+  $(this).addClass("isActive");
 
-setInterval(function(){
-  tabIndex++;
-  if(tabIndex > countTabs){
-    tabIndex = 0;
+  if (tabId === ALL_TABS_ID) {
+    return $(".portfolio-item").removeClass("hidden");
   }
-  checkTab();
-}, time);
+  $(".portfolio-item").addClass("hidden");
+  $(content).removeClass("hidden");
+};
 
-function checkTab(){
-  $(".tab").removeClass("isActive").eq(tabIndex).addClass("isActive");
-    $(".tabs.portfolio__tabs .tabs__content__item")
-    .hide()
-    .eq(tabIndex)
-    .fadeIn();
-}
-
+$(document).ready(function($) {
+  $(".menu__icon").on("click", menuOnClick);
+  $(".tab").on("click", tabsOnClick);
+});
