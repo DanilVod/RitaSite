@@ -24,3 +24,6 @@ $(document).ready(function($) {
   $(".menu__icon").on("click", menuOnClick);
   $(".tab").on("click", tabsOnClick);
 });
+
+
+

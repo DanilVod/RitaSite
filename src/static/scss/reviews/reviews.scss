@@ -1,0 +1,60 @@
+.screen-reviews {
+    text-align: center;
+    background-color: #f5f6f8;
+}
+.slider-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    .slider-item { 
+    &:nth-child(1) {
+        background-image: url(../img/slick_slider_item1.png);
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        height: 109px;
+        width: 109px;
+        margin: 0 auto;
+        background-position: center center;
+    }
+    &:nth-child(2) {
+        background-image: url(../img/slick-slider_item2.png);
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        height: 109px;
+        width: 109px;
+        margin: 0 auto;
+        background-position: center center;
+    }
+    &:nth-child(3) {
+        background-image: url(../img/slick-slider_item3.png);
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        height: 109px;
+        width: 109px;
+        margin: 0 auto;
+        background-position: center center;
+    }
+    }
+}
+.slider-text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+}
